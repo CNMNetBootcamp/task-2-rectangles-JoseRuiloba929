@@ -11,13 +11,13 @@ namespace Task2
             Single triangle1Width = 0;
             Single triangle2Height = 0;
             Single triangle2Width = 0;
-            Single triangle1Area = 0;
-            Single triangle2Area = 0;
+            double triangle1Area = 0;
+            double triangle2Area = 0;
             string inputValue = string.Empty;
             string tryAgain = string.Empty;
             string resultant = null;
             bool isString = true;
-
+            
             //input
             do
             {
@@ -94,9 +94,12 @@ namespace Task2
   
             } while (tryAgain == "Y");
         }
-        private static float triangleArea(float triangleHeight, float triangleWidth)
+        private static double triangleArea(float triangleHeight, float triangleWidth)
         {
-            return .5f * triangleHeight * triangleWidth;
+            double constantofTriangleEquation = 0.5;
+            double AreaofTriangle=0;
+            AreaofTriangle=constantofTriangleEquation* triangleHeight *triangleWidth;
+            return AreaofTriangle;
         }
     }
 }
